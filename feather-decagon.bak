@@ -1,0 +1,400 @@
+EESchema Schematic File Version 4
+LIBS:feather-decagon-cache
+EELAYER 26 0
+EELAYER END
+$Descr User 11984 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L quahog_0.1:q_data_header U?
+U 1 1 5CC25294
+P 6300 2700
+F 0 "U?" H 6480 2952 50  0000 L CNN
+F 1 "q_data_header" H 6480 2859 50  0000 L CNN
+F 2 "" H 6300 2700 50  0001 C CNN
+F 3 "" H 6300 2700 50  0001 C CNN
+	1    6300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:VX7805 U?
+U 1 1 5CC255DA
+P 2350 1400
+F 0 "U?" H 2631 1447 50  0000 L CNN
+F 1 "VX7803" H 2631 1354 50  0000 L CNN
+F 2 "" H 2350 1400 50  0001 C CNN
+F 3 "" H 2350 1400 50  0001 C CNN
+	1    2350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L tpl5110:tpl5110 U?
+U 1 1 5CC34CA2
+P 2850 2550
+F 0 "U?" H 2825 3071 50  0000 C CNN
+F 1 "tpl5110" H 2825 2978 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "" H 3250 2450 50  0001 C CNN
+	1    2850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Q_NPN_EBC Q?
+U 1 1 5CC34FFB
+P 3550 5250
+F 0 "Q?" H 3741 5297 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 3741 5204 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide" H 3750 5350 50  0001 C CNN
+F 3 "" H 3550 5250 50  0001 C CNN
+	1    3550 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Q_PMOS_GDS Q?
+U 1 1 5CC35002
+P 3650 4700
+F 0 "Q?" V 3996 4700 50  0000 C CNN
+F 1 "Q_PMOS_GDS" V 3903 4700 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 3850 4800 50  0001 C CNN
+F 3 "" H 3650 4700 50  0001 C CNN
+	1    3650 4700
+	0    1    -1   0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5CC35009
+P 3200 5250
+F 0 "R?" V 2990 5250 50  0000 C CNN
+F 1 "10K" V 3083 5250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3130 5250 50  0001 C CNN
+F 3 "" H 3200 5250 50  0001 C CNN
+	1    3200 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5CC35010
+P 3200 4750
+F 0 "R?" H 3130 4703 50  0000 R CNN
+F 1 "100K" H 3130 4796 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3130 4750 50  0001 C CNN
+F 3 "" H 3200 4750 50  0001 C CNN
+	1    3200 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 4900 3200 4900
+Wire Wire Line
+	3650 4900 3650 5050
+Connection ~ 3650 4900
+Wire Wire Line
+	3200 4250 3200 4600
+Connection ~ 3200 4600
+Wire Wire Line
+	3200 4600 3450 4600
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5CC36E5B
+P 1250 750
+F 0 "J?" V 1215 559 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 1122 559 50  0000 R CNN
+F 2 "" H 1250 750 50  0001 C CNN
+F 3 "~" H 1250 750 50  0001 C CNN
+	1    1250 750 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 950  1350 1400
+Wire Wire Line
+	1350 1400 1900 1400
+Wire Wire Line
+	1250 950  1250 1300
+Wire Wire Line
+	1250 1300 1550 1300
+Wire Wire Line
+	1900 1400 1900 2450
+Wire Wire Line
+	1900 2450 2150 2450
+Connection ~ 1900 1400
+Wire Wire Line
+	1900 1400 2200 1400
+Wire Wire Line
+	2200 1500 2200 1900
+Wire Wire Line
+	2200 2300 2250 2300
+$Comp
+L Connector:Conn_01x02 J?
+U 1 1 5CC49BA2
+P 2250 3250
+F 0 "J?" V 2121 3330 50  0000 L CNN
+F 1 "Conn_01x02" V 2214 3330 50  0000 L CNN
+F 2 "" H 2250 3250 50  0001 C CNN
+F 3 "~" H 2250 3250 50  0001 C CNN
+	1    2250 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 2600 2250 3050
+Connection ~ 2150 2450
+Wire Wire Line
+	2150 2450 2250 2450
+Wire Wire Line
+	3400 2600 4100 2600
+$Comp
+L Connector:Conn_01x16 J?
+U 1 1 5CC58770
+P 4650 2550
+F 0 "J?" H 4568 1519 50  0000 C CNN
+F 1 "Conn_01x16" H 4568 1612 50  0000 C CNN
+F 2 "" H 4650 2550 50  0001 C CNN
+F 3 "~" H 4650 2550 50  0001 C CNN
+	1    4650 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 2050 5200 2050
+Wire Wire Line
+	4850 3050 5200 3050
+$Comp
+L Adafruit-FONA-800-GSM-Breakout-eagle-import:GND U?
+U 1 1 5CC8E15B
+P 4300 3600
+F 0 "U?" H 4350 3650 50  0001 C CNN
+F 1 "GND" H 4381 3636 42  0000 L CNN
+F 2 "" H 4300 3600 50  0001 C CNN
+F 3 "" H 4300 3600 50  0001 C CNN
+	1    4300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2050 5200 1350
+Connection ~ 5200 2050
+Wire Wire Line
+	5200 1350 4100 1350
+Wire Wire Line
+	4100 1350 4100 2600
+Wire Wire Line
+	4850 2650 4900 2650
+Wire Wire Line
+	4900 2650 4900 3400
+Connection ~ 4900 2650
+Wire Wire Line
+	2150 2450 2150 3050
+$Comp
+L Adafruit-FONA-800-GSM-Breakout-eagle-import:GND U?
+U 1 1 5CCB358B
+P 1900 2550
+F 0 "U?" H 1950 2600 50  0001 C CNN
+F 1 "GND" H 1981 2586 42  0000 L CNN
+F 2 "" H 1900 2550 50  0001 C CNN
+F 3 "" H 1900 2550 50  0001 C CNN
+	1    1900 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1900 2450
+Wire Wire Line
+	3400 2450 3550 2450
+Wire Wire Line
+	3550 2450 3550 3850
+Wire Wire Line
+	3550 3850 2450 3850
+Wire Wire Line
+	2450 3850 2450 5250
+Wire Wire Line
+	2450 5250 3050 5250
+Wire Wire Line
+	1550 1300 1550 4250
+Wire Wire Line
+	1550 4250 3200 4250
+Connection ~ 1550 1300
+Wire Wire Line
+	1550 1300 2200 1300
+$Comp
+L Adafruit-FONA-800-GSM-Breakout-eagle-import:GND U?
+U 1 1 5CCC87ED
+P 3650 5750
+F 0 "U?" H 3700 5800 50  0001 C CNN
+F 1 "GND" H 3731 5786 42  0000 L CNN
+F 2 "" H 3650 5750 50  0001 C CNN
+F 3 "" H 3650 5750 50  0001 C CNN
+	1    3650 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5450 3650 5650
+Wire Wire Line
+	4850 3250 5000 3250
+Wire Wire Line
+	3850 4600 5000 4600
+Wire Wire Line
+	5000 4600 5000 3250
+Connection ~ 5000 3250
+Wire Wire Line
+	4900 3400 4650 3400
+Wire Wire Line
+	4300 3400 4300 3500
+Connection ~ 5200 3050
+$Comp
+L device:Q_NPN_EBC Q?
+U 1 1 5CCFA3CF
+P 3550 7100
+F 0 "Q?" H 3741 7147 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 3741 7054 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Wide" H 3750 7200 50  0001 C CNN
+F 3 "" H 3550 7100 50  0001 C CNN
+	1    3550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Q_PMOS_GDS Q?
+U 1 1 5CCFA3D6
+P 3650 6550
+F 0 "Q?" V 3996 6550 50  0000 C CNN
+F 1 "Q_PMOS_GDS" V 3903 6550 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 3850 6650 50  0001 C CNN
+F 3 "" H 3650 6550 50  0001 C CNN
+	1    3650 6550
+	0    1    -1   0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5CCFA3DD
+P 3200 7100
+F 0 "R?" V 2990 7100 50  0000 C CNN
+F 1 "10K" V 3083 7100 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3130 7100 50  0001 C CNN
+F 3 "" H 3200 7100 50  0001 C CNN
+	1    3200 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5CCFA3E4
+P 3200 6600
+F 0 "R?" H 3130 6553 50  0000 R CNN
+F 1 "100K" H 3130 6646 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3130 6600 50  0001 C CNN
+F 3 "" H 3200 6600 50  0001 C CNN
+	1    3200 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 6750 3200 6750
+Wire Wire Line
+	3650 6750 3650 6900
+Connection ~ 3650 6750
+Wire Wire Line
+	3200 6100 3200 6450
+Connection ~ 3200 6450
+Wire Wire Line
+	3200 6450 3450 6450
+Wire Wire Line
+	2450 7100 3050 7100
+$Comp
+L Adafruit-FONA-800-GSM-Breakout-eagle-import:GND U?
+U 1 1 5CCFA3F3
+P 3650 7600
+F 0 "U?" H 3700 7650 50  0001 C CNN
+F 1 "GND" H 3731 7636 42  0000 L CNN
+F 2 "" H 3650 7600 50  0001 C CNN
+F 3 "" H 3650 7600 50  0001 C CNN
+	1    3650 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 7300 3650 7500
+Wire Wire Line
+	2200 1900 1100 1900
+Wire Wire Line
+	1100 1900 1100 6100
+Wire Wire Line
+	1100 6100 3200 6100
+Connection ~ 2200 1900
+Wire Wire Line
+	2200 1900 2200 2300
+Wire Wire Line
+	2450 5250 2450 7100
+Connection ~ 2450 5250
+Wire Wire Line
+	3850 6450 5200 6450
+Wire Wire Line
+	4850 1750 6100 1750
+Wire Wire Line
+	4850 1850 6100 1850
+Wire Wire Line
+	4850 1950 6100 1950
+Wire Wire Line
+	5200 2050 6100 2050
+Wire Wire Line
+	4850 2150 6100 2150
+Wire Wire Line
+	4850 2250 6100 2250
+Wire Wire Line
+	4850 2350 6100 2350
+Wire Wire Line
+	4850 2450 6100 2450
+Wire Wire Line
+	4850 2550 6100 2550
+Wire Wire Line
+	4900 2650 6100 2650
+Wire Wire Line
+	4850 2750 5500 2750
+Wire Wire Line
+	4850 2850 6100 2850
+Wire Wire Line
+	4850 2950 5350 2950
+Wire Wire Line
+	5200 3050 6100 3050
+Wire Wire Line
+	4850 3150 6100 3150
+Wire Wire Line
+	5000 3250 6100 3250
+$Comp
+L quahog_0.1:adafruit_bme280 U?
+U 1 1 5CD68BDB
+P 6200 4200
+F 0 "U?" H 6481 4402 50  0000 L CNN
+F 1 "adafruit_bme280" H 6481 4309 50  0000 L CNN
+F 2 "" H 6200 4200 50  0001 C CNN
+F 3 "" H 6200 4200 50  0001 C CNN
+	1    6200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3400 4650 3950
+Wire Wire Line
+	4650 3950 6100 3950
+Connection ~ 4650 3400
+Wire Wire Line
+	4650 3400 4300 3400
+Wire Wire Line
+	6100 4250 5350 4250
+Wire Wire Line
+	5350 4250 5350 2950
+Connection ~ 5350 2950
+Wire Wire Line
+	5350 2950 6100 2950
+Wire Wire Line
+	6100 4050 5500 4050
+Wire Wire Line
+	5500 4050 5500 2750
+Connection ~ 5500 2750
+Wire Wire Line
+	5500 2750 6100 2750
+Wire Wire Line
+	5200 3050 5200 3750
+Wire Wire Line
+	6100 3750 5200 3750
+Connection ~ 5200 3750
+Wire Wire Line
+	5200 3750 5200 6450
+$EndSCHEMATC
